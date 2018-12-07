@@ -1,0 +1,23 @@
+[
+  {
+    "name": "poe-trade-macro",
+    "path": "D:\\Downloads\\path_of_exile_addons\\poe_trademacro\\",
+    "source": "https://github.com/PoE-TradeMacro/POE-TradeMacro",
+    "fileName": "Run_TradeMacro.ahk",
+    "selected": true
+  },
+  {
+    "name": "poe-trades-companion",
+    "path": "D:\\Downloads\\path_of_exile_addons\\POE-Trades-Companion\\",
+    "source": "https://github.com/lemasato/POE-Trades-Companion",
+    "fileName": "POE Trades Companion.ahk",
+    "selected": true
+  },
+  {
+    "name": "lab-compass",
+    "path": "D:\\Downloads\\path_of_exile_addons\\LabCompass\\",
+    "source": "https://www.poelab.com/lab-compass/",
+    "fileName": "LabCompass.exe",
+    "selected": false
+  }
+]

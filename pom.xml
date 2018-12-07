@@ -7,7 +7,6 @@
     <name>PoE Tools Launcher</name>
     <description>Launches tools and addons for path of exile</description>
 
-
     <build>
         <plugins>
             <plugin>
@@ -34,6 +33,5 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency>
-
     </dependencies>
 </project>
