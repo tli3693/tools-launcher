@@ -9,12 +9,12 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
-import com.troy.model.Tool;
-import com.troy.tool.service.ToolService;
+import com.troy.model.Mod;
+import com.troy.mod.service.ModService;
 
-public class RunTools {
+public class RunMods {
 	private static File file = new File("D:\\Downloads\\path_of_exile_addons\\test.json");
-	private static ToolService toolService = new ToolService();
+	private static ModService modService = new ModService();
 	private static List<Process> activeProcesses = new LinkedList<>();
 
 	public static void main(String[] args) {
@@ -25,10 +25,10 @@ public class RunTools {
 			reader = new FileReader(file);
 			JsonReader jsonReader = new JsonReader(reader);
 
-			List<Tool> tools = gson.fromJson(jsonReader, new TypeToken<List<Tool>>() {
+			List<Mod> mods = gson.fromJson(jsonReader, new TypeToken<List<Mod>>() {
 			}.getType());
-			for (Tool tool : tools) {
-				Process process = toolService.openTool(tool);
+			for (Mod mod : mods) {
+				Process process = modService.openMod(mod);
 				activeProcesses.add(process);
 			}
 			while (true) {
